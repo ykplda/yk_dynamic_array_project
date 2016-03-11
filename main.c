@@ -36,10 +36,6 @@ int main(int argc, char** argv) {
         scanf("%d",&opt);
         switch(opt)
         {
-            case PUSH:  t = rand()% 100;
-                        push(arr,t);
-                        fprintf(stdout,"item:%d pushed!\n",t);
-                        break;
             case POP:   res = pop(arr,&t);
                         if(res == -1)
                           fprintf(stdout,"The array is empty!");
@@ -50,6 +46,10 @@ int main(int argc, char** argv) {
                           unshift(arr,t);
                           fprintf(stdout,"item:%d unshifted!\n",t);
                           break;
+            case PUSH:  t = rand()% 100;
+                        push(arr,t);
+                        fprintf(stdout,"item:%d pushed!\n",t);
+                        break;
             case SHIFT: res = shift(arr, &t); 
                         if( res != -1)
                           {
