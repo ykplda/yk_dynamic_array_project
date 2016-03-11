@@ -37,13 +37,12 @@ Array *createArray()
     {
         t->items = NULL;
         t->count = 0;
+        return t;
     }
-    else
-    {
-        fprintf( stdout, "Memory allocation error!\n");
-        abort();
-    }
-    return t;
+
+    fprintf( stdout, "Memory allocation error!\n");
+    abort();
+    
 }
 void push(Array *arr, int item)
 {
