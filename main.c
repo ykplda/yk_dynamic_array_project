@@ -16,12 +16,12 @@
  */
 enum {
     PUSH = 1,
-    POP,
-    UNSHIFT,
-    SHIFT,
-    STRINS,
-    PRINT,
-    EXIT
+    POP = 2,
+    UNSHIFT = 3,
+    SHIFT = 4,
+    STRINS = 5,
+    PRINT = 6,
+    EXIT = 7
 };
 int main(int argc, char** argv) {
     Array *arr = NULL;
