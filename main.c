@@ -37,10 +37,11 @@ int main(int argc, char** argv) {
         switch(opt)
         {
             case POP:   res = pop(arr,&t);
-                        if(res == -1)
-                          fprintf(stdout,"The array is empty!");
-                        else
+                        if(res != -1)
                           fprintf(stdout,"item:%d poped!\n ",t);
+                        else
+                          fprintf(stdout,"The array is empty!");
+                          
                         break;
             case UNSHIFT: t = rand() % 100;
                           unshift(arr,t);
