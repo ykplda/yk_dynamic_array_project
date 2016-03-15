@@ -58,6 +58,8 @@ int main(int argc, char** argv) {
                         else
                           {
                             fprintf(stdout, "The array is empty\n");
+                            fprintf(stdout, "WARNING\n");
+                            fprintf(stdout, "WARNING\n");
                           }
                         break;
             case STRINS: straightInsertion(arr);
