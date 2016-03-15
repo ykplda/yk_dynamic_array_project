@@ -26,7 +26,8 @@ enum {
 int main(int argc, char** argv) {
     Array *arr = NULL;
     int opt = 0;
-    int t,res;
+    int t;
+    int res = 0;
     arr = createArray();
     assert(arr != NULL);
     while(1)
